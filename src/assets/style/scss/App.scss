@@ -1,0 +1,74 @@
+@import './inputs.scss';
+
+body {
+  background-color: #282c34;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+input[type='text'] {
+    margin-bottom: 0 !important;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+.collapsible-body {
+    background-color: #eee;
+}
+
+.placeholder {
+    background-color: #fff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+
+    h2 {
+        font-size:2rem;
+        color: darkgrey;
+    }
+}
+
+.btn {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    background-color: inherit;
+
+    &:hover {
+        background-color: #545860;
+    }
+}
+
+.addInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 100%;
+    }
+
+    input[type='text'] {
+        margin-bottom: 0;
+    }
+
+    i {
+        background-color: #fff;
+        cursor: pointer;
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+}
