@@ -1,10 +1,13 @@
 import { observable, action } from 'mobx';
-import { Rule } from '../Components/models';
+import { Entity, Rule } from '../Components/models';
 
 class Global {
   @observable lang = 'en';
   @observable projectName = '';
+  @observable selectedEntity = '';
   @observable rules = [];
+  @observable selectedEntities = new Entity();
+  @observable newEntity = new Entity();
   @observable newRule = new Rule();
 
   @action

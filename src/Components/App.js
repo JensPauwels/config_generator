@@ -10,6 +10,11 @@ import es from 'react-intl/locale-data/es';
 import locales from '../assets/locales';
 import { Generator } from './pages';
 
+import 'materialize-css/dist/js/materialize.min.js';
+import 'materialize-css/dist/css/materialize.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+import '../assets/style/scss/App.scss';
+
 addLocaleData([...en, ...fr, ...nl, ...de, ...es, ...it]);
 
 
